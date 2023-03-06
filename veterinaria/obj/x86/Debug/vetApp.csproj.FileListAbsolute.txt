@@ -1,0 +1,69 @@
+C:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\vetApp.exe.config
+C:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.csprojResolveAssemblyReference.cache
+C:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.csproj.GenerateResource.Cache
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\vetApp.exe
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\vetApp.pdb
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Newtonsoft.Json.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Npgsql.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Mono.Security.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Newtonsoft.Json.pdb
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Newtonsoft.Json.xml
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Npgsql.pdb
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\Npgsql.xml
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\de\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\es\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\fi\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\fr\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\ja\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\bin\Debug\zh-CN\Npgsql.resources.dll
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Properties.Resources.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmLogin.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.MainView.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmListadoProfesionales.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.exe
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.pdb
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmProfesionalBusq.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmListadoClientes.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteBusq.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteList.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteAM.resources
+c:\universidad\lpl\2022\Lenguaje C#\tpfinal\veterinaria\obj\x86\Debug\vetApp.Views.FrmProfesionalAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\vetApp.exe.config
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.exe
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.pdb
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\vetApp.exe
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\vetApp.pdb
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\Mono.Security.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\Npgsql.pdb
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\Npgsql.xml
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\de\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\es\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\fi\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\fr\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\ja\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.csprojResolveAssemblyReference.cache
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Properties.Resources.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmProfesionalBusq.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmLogin.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.MainView.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmListadoClientes.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteBusq.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteList.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmClienteAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmListadoProfesionales.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmProfesionalAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.csproj.GenerateResource.Cache
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.CentroAtencionAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.Consulta.FormConsultaAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.Diagnostico.FrmDiagnosticoAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.Especie.FrmEspecieAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmMascotaAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmCentroAtencionBusq.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmCentroAtencionList.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmMacotaAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.FrmLocalidadAM.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.Localidad.FrmListadoLocalidad.resources
+C:\Users\cliente\Desktop\Universidad\Laboratorio y lenguajes\Practica\tpfinal Veterinaria\veterinaria\obj\x86\Debug\vetApp.Views.Localidad.FrmLocalidadBusq.resources

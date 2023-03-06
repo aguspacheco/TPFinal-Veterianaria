@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{857EBDDC-D2BE-4AB4-9645-85143B6618E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vetApp</RootNamespace>
+    <AssemblyName>vetApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>references\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.91, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>references\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db\AccessDB.cs" />
+    <Compile Include="db\IAccessDB.cs" />
+    <Compile Include="db\IAuditable.cs" />
+    <Compile Include="db\Impl\CentroAtencion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Cliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Diagnostico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Especie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Localidad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Mascota.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\MascotaMedicamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\MascotaTratamiento.cs" />
+    <Compile Include="db\Impl\Medicamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Profesional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\Tratamiento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Impl\TurnoConsulta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\Model\CentroAtencion.cs" />
+    <Compile Include="db\Model\Diagnostico.cs" />
+    <Compile Include="db\Model\Especie.cs" />
+    <Compile Include="db\Model\MascotaMedicamento.cs" />
+    <Compile Include="db\Model\MascotaTratamiento.cs" />
+    <Compile Include="db\Model\Tratamiento.cs" />
+    <Compile Include="db\orm\Logger.cs" />
+    <Compile Include="db\Model\Medicamento.cs" />
+    <Compile Include="db\Model\TurnoConsulta.cs" />
+    <Compile Include="db\Model\Cliente.cs" />
+    <Compile Include="db\Model\Profesional.cs" />
+    <Compile Include="db\Model\Localidad.cs" />
+    <Compile Include="db\Model\Mascota.cs" />
+    <Compile Include="db\ORMDB.cs" />
+    <Compile Include="db\MetaDataClasses.cs" />
+    <Compile Include="db\orm\Orm.cs" />
+    <Compile Include="db\Secure\Funcion.cs" />
+    <Compile Include="db\Secure\FuncionRol.cs" />
+    <Compile Include="db\Secure\Rol.cs" />
+    <Compile Include="db\Secure\Usuario.cs" />
+    <Compile Include="db\Secure\UsuarioRol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionAM.Designer.cs">
+      <DependentUpon>FrmCentroAtencionAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionList.Designer.cs">
+      <DependentUpon>FrmCentroAtencionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmCentroAtencionBusq.Designer.cs">
+      <DependentUpon>FrmCentroAtencionBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CentroAtencion\FrmListado.Designer.cs">
+      <DependentUpon>FrmListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\CommonView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsulta.Designer.cs">
+      <DependentUpon>FrmConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsultaBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsultaBusq.Designer.cs">
+      <DependentUpon>FrmConsultaBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsultaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmConsultaList.Designer.cs">
+      <DependentUpon>FrmConsultaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmListadoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Consulta\FrmListadoConsulta.Designer.cs">
+      <DependentUpon>FrmListadoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Diagnostico\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Diagnostico\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Diagnostico\FrmDiagnosticoAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Diagnostico\FrmDiagnosticoAM.Designer.cs">
+      <DependentUpon>FrmDiagnosticoAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Especie\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Especie\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Especie\FrmEspecieAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Especie\FrmEspecieAM.Designer.cs">
+      <DependentUpon>FrmEspecieAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmLocalidadBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmLocalidadBusq.Designer.cs">
+      <DependentUpon>FrmLocalidadBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmListadoLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmListadoLocalidad.Designer.cs">
+      <DependentUpon>FrmListadoLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mascota\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mascota\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mascota\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mascota\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mascota\FrmMascotaAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mascota\FrmMascotaAM.Designer.cs">
+      <DependentUpon>FrmMascotaAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mascota\FrmMascotaBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mascota\FrmMascotaBusq.Designer.cs">
+      <DependentUpon>FrmMascotaBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmEspecieAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmEspecieAM.Designer.cs">
+      <DependentUpon>FrmEspecieAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmProfesionalBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmProfesionalBusq.Designer.cs">
+      <DependentUpon>FrmProfesionalBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmLocalidadAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Localidad\FrmLocalidadAM.Designer.cs">
+      <DependentUpon>FrmLocalidadAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmListadoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmListadoClientes.Designer.cs">
+      <DependentUpon>FrmListadoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteBusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteBusq.Designer.cs">
+      <DependentUpon>FrmClienteBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteList.Designer.cs">
+      <DependentUpon>FrmClienteList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cliente\FrmClienteAM.Designer.cs">
+      <DependentUpon>FrmClienteAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmListadoProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmListadoProfesionales.Designer.cs">
+      <DependentUpon>FrmListadoProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmProfesionalAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Profesional\FrmProfesionalAM.Designer.cs">
+      <DependentUpon>FrmProfesionalAM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.FrmCargaVotoMesa.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.FrmEscuelaListado.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.FrmListadoMesasTw.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.MainView.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\elecciones.Views.FrmMesasCargadas.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmEspecialidadAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmEspecialidadBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmEspecialidadList.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmListadoPacientes.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmListadoProfesionales.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmPacienteAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmPacienteBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmPacienteList.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.FrmProfesionalAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medic.Views.MainView.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\medicApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.CentroAtencionAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.Consulta.FormConsultaAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.Diagnostico.FrmDiagnosticoAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.Especie.FrmEspecieAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmClienteAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmClienteBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmClienteList.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmListadoClientes.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmListadoProfesionales.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmLogin.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmMascotaAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmProfesionalAM.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.FrmProfesionalBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\vetApp.Views.MainView.resources" />
+    <EmbeddedResource Include="obj\x86\Release\elecciones.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmEspecialidadAM.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmEspecialidadBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmEspecialidadList.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmListadoPacientes.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmListadoProfesionales.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmPacienteAM.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmPacienteBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmPacienteList.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.FrmProfesionalAM.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medic.Views.MainView.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medicApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\medicApp.Views.MainView.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmClienteAM.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmClienteBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmClienteList.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmListadoClientes.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmListadoProfesionales.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmLogin.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmProfesionalAM.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.FrmProfesionalBusq.resources" />
+    <EmbeddedResource Include="obj\x86\Release\vetApp.Views.MainView.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\CentroAtencion\FrmCentroAtencionAM.resx">
+      <DependentUpon>FrmCentroAtencionAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CentroAtencion\FrmCentroAtencionBusq.resx">
+      <DependentUpon>FrmCentroAtencionBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CentroAtencion\FrmCentroAtencionList.resx">
+      <DependentUpon>FrmCentroAtencionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CentroAtencion\FrmListado.resx">
+      <DependentUpon>FrmListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Consulta\FrmConsulta.resx">
+      <DependentUpon>FrmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Consulta\FrmConsultaBusq.resx">
+      <DependentUpon>FrmConsultaBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Consulta\FrmConsultaList.resx">
+      <DependentUpon>FrmConsultaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Consulta\FrmListadoConsulta.resx">
+      <DependentUpon>FrmListadoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Diagnostico\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Diagnostico\FrmDiagnosticoAM.resx">
+      <DependentUpon>FrmDiagnosticoAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Especie\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Especie\FrmEspecieAM.resx">
+      <DependentUpon>FrmEspecieAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Localidad\FrmListadoLocalidad.resx">
+      <DependentUpon>FrmListadoLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Localidad\FrmLocalidadAM.resx">
+      <DependentUpon>FrmLocalidadAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Localidad\FrmLocalidadBusq.resx">
+      <DependentUpon>FrmLocalidadBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mascota\FrmMascotaAM.resx">
+      <DependentUpon>FrmMascotaAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mascota\FrmMascotaBusq.resx">
+      <DependentUpon>FrmMascotaBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Profesional\FrmEspecieAM.resx">
+      <DependentUpon>FrmEspecieAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Profesional\FrmProfesionalBusq.resx">
+      <DependentUpon>FrmProfesionalBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cliente\FrmListadoClientes.resx">
+      <DependentUpon>FrmListadoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cliente\FrmClienteBusq.resx">
+      <DependentUpon>FrmClienteBusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cliente\FrmClienteList.resx">
+      <DependentUpon>FrmClienteList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cliente\FrmClienteAM.resx">
+      <DependentUpon>FrmClienteAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Profesional\FrmListadoProfesionales.resx">
+      <DependentUpon>FrmListadoProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Profesional\FrmProfesionalAM.resx">
+      <DependentUpon>FrmProfesionalAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="bin\Debug\elecciones.exe.config" />
+    <None Include="bin\Debug\elecciones.vshost.exe.config" />
+    <None Include="bin\Debug\elecciones.vshost.exe.manifest" />
+    <None Include="bin\Debug\medic.exe.config" />
+    <None Include="bin\Debug\medic.vshost.exe.config" />
+    <None Include="bin\Debug\medic.vshost.exe.manifest" />
+    <None Include="bin\Debug\medicApp.exe.config" />
+    <None Include="bin\Debug\medicApp.vshost.exe.config" />
+    <None Include="bin\Debug\medicApp.vshost.exe.manifest" />
+    <None Include="bin\Debug\vetApp.exe.config" />
+    <None Include="bin\Debug\vetApp.vshost.exe.config" />
+    <None Include="bin\Debug\vetApp.vshost.exe.manifest" />
+    <None Include="bin\Release\elecciones.exe.config" />
+    <None Include="bin\Release\medic.exe.config" />
+    <None Include="bin\Release\medicApp.exe.config" />
+    <None Include="bin\Release\vetApp.exe.config" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\elecciones.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\elecciones.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\medic.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\medic.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\medicApp.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\medicApp.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\vetApp.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\vetApp.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Release\elecciones.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\elecciones.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Release\medic.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\medic.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Release\medicApp.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\medicApp.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Release\vetApp.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\vetApp.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\de\Npgsql.resources.dll" />
+    <Content Include="bin\Debug\elecciones.exe" />
+    <Content Include="bin\Debug\elecciones.pdb" />
+    <Content Include="bin\Debug\es\Npgsql.resources.dll" />
+    <Content Include="bin\Debug\fi\Npgsql.resources.dll" />
+    <Content Include="bin\Debug\fr\Npgsql.resources.dll" />
+    <Content Include="bin\Debug\ja\Npgsql.resources.dll" />
+    <Content Include="bin\Debug\medic.exe" />
+    <Content Include="bin\Debug\medic.pdb" />
+    <Content Include="bin\Debug\medicApp.exe" />
+    <Content Include="bin\Debug\medicApp.pdb" />
+    <Content Include="bin\Debug\Mono.Security.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.pdb" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Npgsql.dll" />
+    <Content Include="bin\Debug\Npgsql.pdb" />
+    <Content Include="bin\Debug\Npgsql.xml" />
+    <Content Include="bin\Debug\vetApp.exe" />
+    <Content Include="bin\Debug\vetApp.pdb" />
+    <Content Include="bin\Debug\vetApp.vshost.exe" />
+    <Content Include="bin\Debug\zh-CN\Npgsql.resources.dll" />
+    <Content Include="bin\Release\de\Npgsql.resources.dll" />
+    <Content Include="bin\Release\elecciones.exe" />
+    <Content Include="bin\Release\elecciones.pdb" />
+    <Content Include="bin\Release\es\Npgsql.resources.dll" />
+    <Content Include="bin\Release\fi\Npgsql.resources.dll" />
+    <Content Include="bin\Release\fr\Npgsql.resources.dll" />
+    <Content Include="bin\Release\ja\Npgsql.resources.dll" />
+    <Content Include="bin\Release\medic.exe" />
+    <Content Include="bin\Release\medic.pdb" />
+    <Content Include="bin\Release\medicApp.exe" />
+    <Content Include="bin\Release\medicApp.pdb" />
+    <Content Include="bin\Release\Mono.Security.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.pdb" />
+    <Content Include="bin\Release\Newtonsoft.Json.xml" />
+    <Content Include="bin\Release\Npgsql.dll" />
+    <Content Include="bin\Release\Npgsql.pdb" />
+    <Content Include="bin\Release\Npgsql.xml" />
+    <Content Include="bin\Release\vetApp.exe" />
+    <Content Include="bin\Release\vetApp.pdb" />
+    <Content Include="bin\Release\zh-CN\Npgsql.resources.dll" />
+    <Content Include="obj\x86\Debug\elecciones.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\elecciones.exe" />
+    <Content Include="obj\x86\Debug\elecciones.pdb" />
+    <Content Include="obj\x86\Debug\medic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\medic.exe" />
+    <Content Include="obj\x86\Debug\medic.pdb" />
+    <Content Include="obj\x86\Debug\medicApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\medicApp.exe" />
+    <Content Include="obj\x86\Debug\medicApp.pdb" />
+    <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\x86\Debug\vetApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\vetApp.exe" />
+    <Content Include="obj\x86\Debug\vetApp.pdb" />
+    <Content Include="obj\x86\Release\elecciones.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\elecciones.exe" />
+    <Content Include="obj\x86\Release\elecciones.pdb" />
+    <Content Include="obj\x86\Release\medic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\medic.exe" />
+    <Content Include="obj\x86\Release\medic.pdb" />
+    <Content Include="obj\x86\Release\medicApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\medicApp.exe" />
+    <Content Include="obj\x86\Release\medicApp.pdb" />
+    <Content Include="obj\x86\Release\TempPE\db.Model.Model1.Context.cs.dll" />
+    <Content Include="obj\x86\Release\TempPE\db.Model.Model1.cs.dll" />
+    <Content Include="obj\x86\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\x86\Release\vetApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\vetApp.exe" />
+    <Content Include="obj\x86\Release\vetApp.pdb" />
+    <Content Include="references\de\Npgsql.resources.dll" />
+    <Content Include="references\es\Npgsql.resources.dll" />
+    <Content Include="references\fi\Npgsql.resources.dll" />
+    <Content Include="references\fr\Npgsql.resources.dll" />
+    <Content Include="references\ja\Npgsql.resources.dll" />
+    <Content Include="references\Mono.Security.dll" />
+    <Content Include="references\Newtonsoft.Json.dll" />
+    <Content Include="references\Npgsql.dll" />
+    <Content Include="references\Npgsql.pdb" />
+    <Content Include="references\Npgsql.XML" />
+    <Content Include="references\zh-CN\Npgsql.resources.dll" />
+    <Content Include="Script\scriptBD.sql" />
+    <None Include="Resources\img_vac2.jpg" />
+    <None Include="Resources\img_vac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
